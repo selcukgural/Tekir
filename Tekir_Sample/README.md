@@ -12,7 +12,7 @@ namespace Tekir_Sample
         {
             var markdown = new Markdown();
             markdown.AddLine(new Heading(HeadingLevel.One, "Tekir ",
-                    new Image("Tekir", "https://github.com/selcukgural/Tekir/blob/main/src/image/64px.png")))
+                    new Image("Tekir", "https://github.com/selcukgural/Tekir/tree/master/Tekir/src/image/64px.png")))
                 .AddLine(new HorizontalRule())
                 .AddLine(new FreeText(
                     "Tekir is a **Markdown** creator for .Net apps. Allows you to create Markdown file over class objects. Also Tekir supports almost all Markdown tags. Actually if you want try a manually simple Markdown file Tekir a little bit want more effect but **it may be more useful if you want to create a dynamic Markdown file according to certain conditions via a program.**"))
