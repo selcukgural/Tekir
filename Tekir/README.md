@@ -9,6 +9,12 @@ You can save the markdown file to your disk like that. You can also extend the *
 For more information please check [Tekir_Sample](https://github.com/selcukgural/Tekir/tree/master/Tekir_Sample) project [Program.cs](https://github.com/selcukgural/Tekir/blob/master/Tekir_Sample/Program.cs) file.
 
 
+`You can also download via NuGet`
+* `Install-Package Tekir`
+* [Here](https://www.nuget.org/packages/Tekir/1.0.0)
+
+
+
 **Note:** This README.md file created by Tekir.
 
 

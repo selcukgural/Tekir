@@ -2,6 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
+    <Authors>Selçuk Güral</Authors>
+    <Copyright>Selçuk Güral</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/selcukgural/Tekir/tree/master/Tekir</PackageProjectUrl>
+    <PackageIcon>64px.png</PackageIcon>
+    <RepositoryUrl>https://github.com/selcukgural/Tekir/tree/master/Tekir</RepositoryUrl>
+    <PackageTags>Markdown, Creator, Runtime, Tekir</PackageTags>
+    <Description>Tekir is a Markdown creator for .Net apps. Allows you to create Markdown file over class objects. Also Tekir supports almost all Markdown tags.</Description>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="src\image\64px.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
