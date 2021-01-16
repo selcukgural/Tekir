@@ -110,14 +110,13 @@ table.Rows.Add(new[] { "Column 1", "Column 2", "Column 3", "Column 4" });
 
 
 `Headers`
----
+
 ###### Header 6
 ##### Header 5
 #### Header 4
 ### Header 3
 ## Header 2
 # Header 1
----
 
 ## Fenced Code
 ```Fenced Code Sample...```
