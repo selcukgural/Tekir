@@ -1,4 +1,4 @@
-﻿# Tekir ![:(](https://github.com/selcukgural/Tekir/blob/Tekir_Sample/Tekir/src/image/32px.png "Tekir")
+﻿# Tekir ![:(](https://github.com/selcukgural/Tekir/tree/master/Tekir/src/image/32px.png "Tekir")
 
 Tekir is a **Markdown** creator for .Net apps. Allows you to create Markdown file over class objects. Also Tekir supports almost all Markdown tags. Actually if you want try a manually simple Markdown file Tekir a little bit want more effect but **it may be more useful if you want to create a dynamic Markdown file according to certain conditions via a program.**
 
@@ -6,7 +6,7 @@ Tekir is a **Markdown** creator for .Net apps. Allows you to create Markdown fil
 You can save the markdown file to your disk like that. You can also extend the **Save** method using the `IEntry` interface.
 
 
-For more information please check [Tekir_Sample](https://github.com/selcukgural/Tekir/tree/Tekir_Sample/Tekir_Sample) project [Program.cs](https://github.com/selcukgural/Tekir/blob/Tekir_Sample/Tekir_Sample/Program.cs) file.
+For more information please check [Tekir_Sample](https://github.com/selcukgural/Tekir/tree/master/Tekir_Sample) project [Program.cs](https://github.com/selcukgural/Tekir/blob/master/Tekir_Sample/Program.cs) file.
 
 
 **Note:** This README.md file created by Tekir.
