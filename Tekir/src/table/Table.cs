@@ -59,7 +59,7 @@ namespace Tekir
                         builder.Append(":").Append(string.Join("",Enumerable.Repeat("-", column.Name.Length - 2))).Append(":").Append("|");
                         break;
                     default:
-                        builder.Append(string.Join("",Enumerable.Repeat("-", column.Name.Length))).Append("|");
+                        builder.Append(":").Append(string.Join("",Enumerable.Repeat("-", column.Name.Length - 1))).Append("|");
                         break;
 
                 }
