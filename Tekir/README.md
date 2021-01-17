@@ -42,7 +42,7 @@ markdown.AddLine(new Heading(HeadingLevel.One, "Tekir ",
 .AddLine(new SyntaxHighlighting("Get();","csharp",new Paragraph()))
 .AddLine(new Heading(HeadingLevel.Two, "Table"));
 ```
-The Get method will return the **Markdown string**. You can always call
+The `Get` method will return the **Markdown string**. You can always call
 ```csharp
 markdown.Get();
 ```
@@ -67,7 +67,7 @@ table.Rows.Add(new[] { "Column 1", "Column 2", "Column 3", "Column 4" });
 `Output`
 
 |Test|Test 2|Test 3|Test 4|
-|----|:----:|-----:|------|
+|:---|:----:|-----:|------|
 |Column 1|Column 2|Column 3|Column 4|
 |Column 1|Column 2|Column 3|Column 4|
 |Column 1|Column 2|Column 3|Column 4|
