@@ -67,7 +67,7 @@ table.Rows.Add(new[] { "Column 1", "Column 2", "Column 3", "Column 4" });
 `Output`
 
 |Test|Test 2|Test 3|Test 4|
-|----|:----:|-----:|------|
+|:---|:----:|-----:|------|
 |Column 1|Column 2|Column 3|Column 4|
 |Column 1|Column 2|Column 3|Column 4|
 |Column 1|Column 2|Column 3|Column 4|
