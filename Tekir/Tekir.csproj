@@ -11,6 +11,7 @@
     <PackageTags>Markdown, Creator, Runtime, Tekir</PackageTags>
     <Description>Tekir is a Markdown creator for .Net apps. Allows you to create Markdown file over class objects. Also Tekir supports almost all Markdown tags.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
