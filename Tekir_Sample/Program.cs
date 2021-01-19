@@ -19,7 +19,8 @@ namespace Tekir_Sample
                 .AddLine(new FreeText(
                     "You can save the markdown file to your disk like that. You can also extend the **Save** method using the `IEntry` interface."))
                 .AddLine(new Paragraph())
-                .AddLine(new FreeText("For more information please check **Tekir_Sample** project's `Program.cs` file."))
+                .AddLine(
+                    new FreeText("For more information please check **Tekir_Sample** project's `Program.cs` file."))
                 .AddLine(new Paragraph())
                 .AddLine(new FreeText("**Note:** This README.md file created by Tekir."))
                 .AddLine(new Paragraph())
@@ -27,22 +28,22 @@ namespace Tekir_Sample
                 .AddLine(new HorizontalRule(new Paragraph()))
                 .AddLine(new SyntaxHighlighting())
                 .AddLine(new FreeText("The Get method will return the **Markdown string**. You can always call"))
-                .AddLine(new SyntaxHighlighting("Get();","csharp",new Paragraph()))
+                .AddLine(new SyntaxHighlighting("Get();", "csharp", new Paragraph()))
                 .AddLine(new Heading(HeadingLevel.Two, "Table"));
 
-
             #region Markdown Table
+
             var table = new Table();
             table.Columns.Add(new Column("Test", Alignment.Left));
             table.Columns.Add(new Column("Test 2", Alignment.Center));
             table.Columns.Add(new Column("Test 3", Alignment.Right));
             table.Columns.Add(new Column("Test 4"));
 
-            table.Rows.Add(new[] { "Column 1", "Column 2", "Column 3", "Column 4" });
-            table.Rows.Add(new[] { "Column 1", "Column 2", "Column 3", "Column 4" });
-            table.Rows.Add(new[] { "Column 1", "Column 2", "Column 3", "Column 4" }); 
-            #endregion
+            table.Rows.Add(new[] {"Column 1", "Column 2", "Column 3", "Column 4"});
+            table.Rows.Add(new[] {"Column 1", "Column 2", "Column 3", "Column 4"});
+            table.Rows.Add(new[] {"Column 1", "Column 2", "Column 3", "Column 4"});
 
+            #endregion
 
             markdown.AddLine(new Code("Input"))
                 .AddLine(new Paragraph())
@@ -69,12 +70,24 @@ namespace Tekir_Sample
                 .AddLine(new Heading(HeadingLevel.Two, "UnOrderedList", new Paragraph()))
                 .AddLine(new UnOrderedList(new List<UnOrderedItem>
                 {
-                    new UnOrderedItem("Item 1", new[] {"Sub item 1", "Sub item 2"}),
-                    new UnOrderedItem("Item 2", new[] {"Sub item 1", "Sub item 2"}),
-                    new UnOrderedItem("Item 3", new[] {"Sub item 1", "Sub item 2", "Sub item 3"}),
-                }))
-                .AddLine(new Paragraph())
-                .AddLine(new Heading(HeadingLevel.Two, "Image", new Paragraph()))
+                    new("Item 1", new[] {"Sub item 1", "Sub item 2"}),
+                    new("Item 2", new[] {"Sub item 1", "Sub item 2"}),
+                    new("Item 3", new[] {"Sub item 1", "Sub item 2", "Sub item 3"}),
+                }));
+
+            #region Task list
+            var taskList = new TaskList(new List<TaskListItem>
+            {
+                new("item", TaskItemState.Done),
+                new("item 2", TaskItemState.Open),
+                new("item 3", TaskItemState.Open),
+                new("item 4", TaskItemState.Open)
+            });
+            markdown.AddLine(new Heading(HeadingLevel.Two, "Task List"));
+            markdown.AddLine(taskList);
+            #endregion
+
+            markdown.AddLine(new Heading(HeadingLevel.Two, "Image", new Paragraph()))
                 .AddLine(new Image("Voltron", "https://upload.wikimedia.org/wikipedia/en/6/6b/Voltron_logo.png"))
                 .AddLine(new Paragraph())
                 .AddLine(new Heading(HeadingLevel.Two, "Linked Image", new Paragraph()))
@@ -106,19 +119,19 @@ namespace Tekir_Sample
                 .AddLine(new Section("Section", "Italic"))
                 .AddLine(new Heading(HeadingLevel.Two, "Block Quote"))
                 .AddLine(new BlockQuote("Block quote sample...", new Paragraph()))
-                .AddLine(new Heading(HeadingLevel.Two, "Nesned Block Quote"))
-                .AddLine(new NestedBlockQuote("Block quote sample...")).Save(new FileEntry
-                {
-                    //This line will save the markdown content to your disk.
-                    FileContent = markdown.Get(), Encoding = Encoding.UTF8 /*Default*/, FullFileName = @"D:\README.md"
-                });
+                .AddLine(new Heading(HeadingLevel.Two, "Nesned Block Quote"));
+
+            //This line will save the markdown content to your disk.
+            //.AddLine(new NestedBlockQuote("Block quote sample...")).Save(new FileEntry
+            //{
+
+            //    FileContent = markdown.Get(), Encoding = Encoding.UTF8 /*Default*/, FullFileName = @"D:\README.md"
+            //});
 
             // Markdown string
             var markdownContent = markdown.Get();
             Console.WriteLine(markdownContent);
-
             Console.ReadKey();
-
         }
     }
 }
